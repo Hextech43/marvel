@@ -1,18 +1,13 @@
 import React from 'react'
-import Homescreen from "./MOVIE/Homescreen"
-import Detailedpage from './MOVIE/Detailedpage'
-import { BrowserRouter as Router , Route, Routes  } from 'react-router-dom'
+import Homepage from './expensetracker/Homepage'
 
 const App = () => {
   return (
-   <Router>
-   <Routes>
-
-     <Route path='/' element={<Homescreen/>}/>
-     <Route path='/detail/:id' element={<Detailedpage/>}/>
-   </Routes>
-   </Router>
+    <Homepage/>
+    // <div>hi there</div>
   )
+  
+  
 }
 
 export default App
